@@ -4,7 +4,7 @@
     make create-network
     make mysql-up
     make rabbitmq-up
-    make visualization-up
+    make redash-up
 
 # create finmind sync data api
 ### if your have token
