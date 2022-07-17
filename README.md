@@ -4,7 +4,7 @@
     make create-network
     make mysql-up
     make rabbitmq-up
-    make redash-up
+    make visualization-up
 
 # create finmind sync data api
 ### if your have token
@@ -22,5 +22,5 @@
 * rabbitmq: http://localhost:15672/
     * user : worker
     * password : worker
-* redash: http://localhost:5000/
+* visualization: http://localhost:5000/
 * finmind-visualization-api: http://localhost:8888/docs

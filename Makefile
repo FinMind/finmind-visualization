@@ -29,7 +29,6 @@ redash-up:
 redash-down:
 	docker-compose -f redash.yml down
 
-# redash
 rabbitmq-up:
 	docker-compose -f rabbitmq.yml up -d
 
@@ -43,16 +42,9 @@ finmind-up:
 finmind-down:
 	docker-compose -f finmind.yml down
 
-run-celery:
-	pipenv run celery -A redash.tasks.worker worker --loglevel=info --concurrency=1  --hostname=%h -Q finmind
-
 # create table
 create-mysql-table:
 	docker-compose -f create_table.yml up
 
-#--------------------------------------------------
-direct-run:
-	pipenv run uvicorn redash.main:app --workers 2 --host 0.0.0.0 --port 8888
-
 format:
-	black -l 80 redash tests
+	black -l 80 visualization tests

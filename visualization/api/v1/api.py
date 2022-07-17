@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from redash.api.v1.endpoints import (
+from visualization.api.v1.endpoints import (
     update_data,
     create_mysql_table,
     sync_history_data,

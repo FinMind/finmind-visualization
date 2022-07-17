@@ -1,5 +1,5 @@
-from redash.tasks import task
-from redash.backend import db
+from visualization.tasks import task
+from visualization.backend import db
 
 
 def test_update_data():

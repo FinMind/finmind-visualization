@@ -2,9 +2,9 @@ import pandas as pd
 from loguru import logger
 from tqdm import tqdm
 
-from redash.backend import db, finmind_api
-from redash.tasks.worker import app
-from redash.utility.date import create_date
+from visualization.backend import db, finmind_api
+from visualization.tasks.worker import app
+from visualization.utility.date import create_date
 
 
 def convert_data(df: pd.DataFrame) -> pd.DataFrame:

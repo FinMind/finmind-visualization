@@ -5,7 +5,7 @@ import pymysql
 from loguru import logger
 from tqdm import tqdm
 
-from redash.backend.router import Router
+from visualization.backend.router import Router
 
 
 class DB:

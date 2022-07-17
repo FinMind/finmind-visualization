@@ -24,7 +24,7 @@ services:
       networks:
           - finmind_network
 
-  redash-phpmyadmin:
+  finmind-phpmyadmin:
       image: phpmyadmin/phpmyadmin:5.1.0
       links: 
           - finmind-mysql:db

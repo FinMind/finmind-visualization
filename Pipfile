@@ -12,7 +12,7 @@ pymysql = "==1.0.0"
 apscheduler = "==3.7.0"
 pandas = "==1.1.5"
 tqdm = "==4.62.2"
-redash = {editable = true, path = "."}
+visualization = {editable = true, path = "."}
 fastapi = "==0.60.1"
 uvicorn = "==0.15.0"
 ujson = "==4.1.0"

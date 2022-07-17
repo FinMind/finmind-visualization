@@ -1,8 +1,8 @@
 import requests
 
-from redash.backend import db
-from redash.config import FINMIND_API_TOKEN
-from redash.utility.date import get_tomorrow
+from visualization.backend import db
+from visualization.config import FINMIND_API_TOKEN
+from visualization.utility.date import get_tomorrow
 
 
 def get_start_date(dataset: str, start_date: str) -> str:

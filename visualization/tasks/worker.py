@@ -1,7 +1,7 @@
 from celery import Celery
 from loguru import logger
 
-from redash.config import (
+from visualization.config import (
     MESSAGE_QUEUE_DB,
     MESSAGE_QUEUE_HOST,
     MESSAGE_QUEUE_PASSWORD,
@@ -22,4 +22,4 @@ elif MESSAGE_QUEUE_TYPE == "redis":
     )
 
 logger.info(broker)
-app = Celery("task", include="redash.tasks.task", broker=broker)
+app = Celery("task", include="visualization.tasks.task", broker=broker)

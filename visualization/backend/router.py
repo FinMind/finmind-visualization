@@ -5,7 +5,7 @@ import redis
 from loguru import logger
 from sqlalchemy import engine
 
-from redash.backend import clients
+from visualization.backend import clients
 
 
 def check_alive(connect: engine.base.Connection):

@@ -2,9 +2,9 @@ from fastapi import APIRouter, Form
 from starlette.requests import Request
 from starlette.responses import UJSONResponse
 
-from redash.schema.input import DataSetInput
-from redash.backend import db
-from redash.tasks.task import update_all_data_task
+from visualization.schema.input import DataSetInput
+from visualization.backend import db
+from visualization.tasks.task import update_all_data_task
 
 
 router = APIRouter()

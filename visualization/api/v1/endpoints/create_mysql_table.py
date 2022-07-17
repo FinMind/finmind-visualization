@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from starlette.requests import Request
 from starlette.responses import UJSONResponse
 
-from redash.backend import db
+from visualization.backend import db
 from loguru import logger
 
 

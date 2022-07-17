@@ -4,14 +4,14 @@ import time
 from apscheduler.schedulers.background import BackgroundScheduler
 from loguru import logger
 
-from redash.backend import db
-from redash.tasks.task import update_all_data_task
-from redash.utility.common import (
+from visualization.backend import db
+from visualization.tasks.task import update_all_data_task
+from visualization.utility.common import (
     crontab_run,
     get_start_date,
     is_update_with_data_id,
 )
-from redash.utility.date import get_now
+from visualization.utility.date import get_now
 
 
 def get_scheduler_info_list() -> typing.List[

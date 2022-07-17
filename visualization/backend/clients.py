@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine, engine
 
-from redash import config
+from visualization import config
 
 
 def get_redash_mysql_conn() -> engine.base.Connection:

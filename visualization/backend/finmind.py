@@ -7,7 +7,7 @@ import requests
 import urllib3
 from loguru import logger
 
-from redash.config import FINMIND_API_TOKEN
+from visualization.config import FINMIND_API_TOKEN
 
 
 def request_get(
