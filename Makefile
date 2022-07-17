@@ -1,4 +1,3 @@
-SHA := $(shell git rev-parse --short=8 HEAD)
 TAG := 0.1 
 
 package-install:
