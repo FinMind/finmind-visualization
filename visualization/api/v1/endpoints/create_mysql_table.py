@@ -213,7 +213,7 @@ def create_scheduler_table():
             `dataset` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
             `update_with_data_id` tinyint(1) NOT NULL,
             `start_date` date DEFAULT NULL,
-            `is_scheduler` tinyint(1) NOT NULL,
+            `is_scheduler` tinyint(1) NOT NULL COMMENT '1=要定時更新\r\n0=不要定時更新',
             `crontab_hour` varchar(10) NOT NULL
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
     """
